@@ -1,8 +1,10 @@
+import Contact from "../components/Contact.jsx";
+
 export default function Home() {
     return (
         <main>
             <header>
-                <h1>Michelle</h1>
+                <h1>this is a header</h1>
                 <p>Just like a cat, I know how to find the best spots— whether it’s in code or design!</p>
             </header>
 
@@ -21,6 +23,8 @@ export default function Home() {
                     <h3>Project 1</h3>
                 </div>
             </section>
+
+            <Contact/>
         </main>
     );
 }
