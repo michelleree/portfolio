@@ -11,7 +11,9 @@ function Navbar() {
 
     return (
         <nav className="navbar-container">
-            <h1 className="logo">m.</h1>
+            <li>
+                <Link to="/" onClick={toggleNav} className="logo">m.</Link>
+            </li>
             <div
                 className={`hamburger-lines ${isNavOpen ? "hamburger-active" : ""}`}
                 onClick={toggleNav}
@@ -22,16 +24,13 @@ function Navbar() {
             </div>
             <ul className={`menu-items ${isNavOpen ? "active" : ""}`}>
                 <li>
-                    <Link to="/" onClick={toggleNav}>Home</Link>
+                    <Link to="/work" onClick={toggleNav}>my work</Link>
                 </li>
                 <li>
-                    <Link to="/work" onClick={toggleNav}>Work</Link>
+                    <Link to="/experience" onClick={toggleNav}>my experience</Link>
                 </li>
                 <li>
-                    <Link to="/experience" onClick={toggleNav}>Experience</Link>
-                </li>
-                <li>
-                    <Link to="/contact" onClick={toggleNav}>Contact</Link>
+                    <Link to="/contact" onClick={toggleNav}>contact me</Link>
                 </li>
             </ul>
         </nav>

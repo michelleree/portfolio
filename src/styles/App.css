@@ -7,13 +7,12 @@
 }
 
 :root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   --header-font: 'Meringue', serif;
+  --quotes-font: 'Times New Roman', serif;
   --red: #772222;
   --dark-brown: #411E03;
+  --medium-brown: #4D3D1A;
   --brown: #A67244;
   --light-brown: #F2DDB6;
   --green: #73672F;
@@ -23,5 +22,38 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Futura Md BT", sans-serif;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--red);
+    text-align: center;
+    font-family: var(--header-font), serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--dark-brown);
+    text-align: center;
+    font-family: var(--header-font), serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--header-font), serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
 }
