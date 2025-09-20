@@ -14,10 +14,12 @@ body {
 .intro-background-elements {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: -2rem;
+    right: -2rem;
+    width: auto;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .intro-card {
@@ -79,7 +81,7 @@ body {
     transform: rotate(7deg);
     position: absolute;
     right: 20%;
-    top: 24%;
+    top: 11%;
     z-index: 1;
 }
 
@@ -96,8 +98,8 @@ body {
     width: 400px;
     height: auto;
     position: absolute;
-    right: -20%;
-    top: 5%;
+    right: -30%;
+    top: -10%;
     z-index: -1;
 }
 
@@ -106,7 +108,7 @@ body {
     height: auto;
     position: absolute;
     left: -25%;
-    bottom: 2%;
+    bottom: 5%;
     z-index: -1;
 }
 
@@ -114,8 +116,8 @@ body {
     width: 120px;
     height: auto;
     position: absolute;
-    left: -3%;
-    top: 20%;
+    left: -15%;
+    top: 7%;
     z-index: 2;
 }
 
@@ -123,8 +125,8 @@ body {
     width: 550px;
     height: auto;
     position: absolute;
-    left: -50%;
-    top: 15%;
+    left: -60%;
+    top: 5%;
     z-index: -5;
     opacity: 0.7;
 }
@@ -133,7 +135,7 @@ body {
     width: 550px;
     height: auto;
     position: absolute;
-    right: -50%;
+    right: -60%;
     bottom: 10%;
     z-index: -5;
     opacity: 0.7;
@@ -143,7 +145,7 @@ body {
     width: 150px;
     height: auto;
     position: absolute;
-    right: -5%;
+    right: -10%;
     bottom: 12%;
     z-index: 2;
 }
@@ -165,21 +167,26 @@ body {
 }
 
 .welcome1 {
-    height: 100vh;
+    height: 90vh;
     margin: 3rem 0;
 }
 
 .welcome2 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .welcome-background-elements {
     position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100%;
+    top: 0;
+    left: -2rem;
+    right: -2rem;
+    width: auto;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .welcome h2 {
@@ -191,6 +198,9 @@ body {
     rotate: -10deg;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 2%;
 }
 
 .welcome h3 {
@@ -205,27 +215,52 @@ body {
 }
 
 .welcome-clip {
-    width: 60px;
-
-}
-
-.welcome2-text {
-    background-color: var(--dark-brown);
-    padding: 2rem 1.5rem;
-    height: 30%;
+    width: 80px;
+    position: absolute;
+    right: 10%;
+    top: -3%;
+    z-index: 1;
 }
 
 .me {
     width: 300px;
     margin: 1rem 0;
+    position: absolute;
+    top: 7%;
+    left: 10%;
 }
 
 .file1 {
     position: absolute;
     width: 800px;
-    top: 10%;
     left: -30%;
     rotate: -90deg;
+}
+
+.file2 {
+    position: absolute;
+    width: 800px;
+    bottom: 16%;
+    right: -35%;
+    rotate: 90deg;
+    z-index: -1;
+}
+
+.welcome2-text {
+    background-color: var(--dark-brown);
+    padding: 2rem 1.5rem;
+    width: 70%;
+}
+
+.welcome-background-elements2 {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    right: -2rem;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 
@@ -233,8 +268,10 @@ body {
 @media (min-width: 768px) {
     /* INTRO */
     .intro-card {
+        height: 380px;
         max-width: 70%;
         padding: 2rem;
+        margin: 5rem auto;
     }
 
     .intro-card h1 {
@@ -244,44 +281,35 @@ body {
 
     .intro-card p {
         font-size: 1.5rem;
-        padding: 2rem 5rem;
+        padding: 1rem 5rem;
         margin: 1.5rem 2rem;
     }
 
-    .intro-card img {
-        width: 126px;
-        height: 87px;
-        position: absolute;
-        top: 58%;
-        right: 28%;
-        transform: translateY(-50%) translateX(50%);
-    }
-
     .clip {
-        width: 100px;
+        width: 90px;
         right: 20%;
-        top: 23%;
+        top: 2%;
     }
 
     .cat {
-        width: 200px;
+        width: 170px;
         position: absolute;
-        top: 52%;
+        top: 65%;
         right: 23%;
         transform: translateY(-50%) translateX(50%);
         z-index: 1;
     }
 
     .dragon {
-        width: 700px;
-        right: 0;
-        top: 0;
+        width: 600px;
+        right: -10%;
+        top: -20%;
     }
 
     .astrology {
-        width: 500px;
-        left: -2%;
-        bottom: 5%;
+        width: 400px;
+        left: -5%;
+        bottom: -20%;
     }
 
     .bunny {

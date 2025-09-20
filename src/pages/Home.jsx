@@ -13,18 +13,19 @@ import "../styles/Home.css";
 export default function Home() {
     return (
         <main>
-            <div className="intro-background-elements">
+            <section className="intro">
+                <div className="intro-background-elements">
+                    <img src={dragon} alt="dragon" className="dragon"/>
+                    <img src={astrology} alt="astrology map" className="astrology"/>
+                    <img src={letter} alt="letter" className="letter1"/>
+                    <img src={letter} alt="letter" className="letter2"/>
+                </div>
                 <img src={clip} alt="clip" className="clip"/>
                 <img src={catSvg} alt="sleeping cat" className="cat"/>
-                <img src={dragon} alt="dragon" className="dragon"/>
-                <img src={astrology} alt="astrology map" className="astrology"/>
                 <img src={bunny} alt="bunny" className="bunny"/>
-                <img src={letter} alt="letter" className="letter1"/>
-                <img src={letter} alt="letter" className="letter2"/>
                 <img src={sakura} alt="sakura" className="sakura1"/>
                 <img src={sakura} alt="sakura" className="sakura2"/>
-            </div>
-            <section className="intro">
+
                 <div className="intro-card">
                     <h1>Michelle</h1>
                     <div className="quote">
@@ -33,12 +34,12 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="welcome-background-elements">
-                <img src={file} alt="file" className="file1"/>
-                <img src={file} alt="file" className="file2"/>
-            </div>
+
             <section className="welcome">
                 <div className="welcome1">
+                    <div className="welcome-background-elements">
+                        <img src={file} alt="file" className="file1"/>
+                    </div>
                     <div>
                         <img src={clip} alt="clip" className="welcome-clip"/>
                         <div className="welcome-title"><h2>Welcome</h2></div>
@@ -46,6 +47,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="welcome2">
+                    <div className="welcome-background-elements2">
+                        <img src={file} alt="file" className="file2"/>
+                    </div>
                     <div className="welcome2-text">
                         <h3>Hello, you</h3>
                         <p>
