@@ -45,6 +45,9 @@ body {
     margin: 1rem 1rem 3rem 1rem;
     position: relative;
     height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quote p {
@@ -81,7 +84,7 @@ body {
     transform: rotate(7deg);
     position: absolute;
     right: 20%;
-    top: 11%;
+    top: 14%;
     z-index: 1;
 }
 
@@ -99,7 +102,7 @@ body {
     height: auto;
     position: absolute;
     right: -30%;
-    top: -10%;
+    top: -2%;
     z-index: -1;
 }
 
@@ -167,15 +170,42 @@ body {
 }
 
 .welcome1 {
-    height: 90vh;
+    height: 70vh;
     margin: 3rem 0;
+    background-color: white;
+}
+
+.welcome h2 {
+    padding: 1.2rem 0 0.3rem;
+    font-size: 2.5rem;
+}
+
+.welcome-title {
+    border: 5px solid var(--dark-brown);
+    background-color: var(--light-brown);
+    width: 80%;
+    rotate: -10deg;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.welcome-clip {
+    width: 80px;
+    position: absolute;
+    right: 10%;
+    top: -2%;
+    z-index: 1;
+}
+
+.me {
+    width: 300px;
+    margin: 1rem 0;
 }
 
 .welcome2 {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    height: 80vh;
+    background-color: white;
 }
 
 .welcome-background-elements {
@@ -189,21 +219,7 @@ body {
     z-index: -1;
 }
 
-.welcome h2 {
-    border: 3px solid var(--dark-brown);
-    background-color: var(--light-brown);
-    width: 80%;
-    padding: 1.2rem 0 0.3rem;
-    font-size: 2.5rem;
-    rotate: -10deg;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    right: 0;
-    top: 2%;
-}
-
-.welcome h3 {
+h3 {
     text-align: start;
     color: white;
 }
@@ -214,64 +230,89 @@ body {
     color: white;
 }
 
-.welcome-clip {
-    width: 80px;
-    position: absolute;
-    right: 10%;
-    top: -3%;
-    z-index: 1;
-}
-
-.me {
-    width: 300px;
-    margin: 1rem 0;
-    position: absolute;
-    top: 7%;
-    left: 10%;
-}
-
-.file1 {
-    position: absolute;
-    width: 800px;
-    left: -30%;
-    rotate: -90deg;
-}
-
-.file2 {
-    position: absolute;
-    width: 800px;
-    bottom: 16%;
-    right: -35%;
-    rotate: 90deg;
-    z-index: -1;
-}
-
 .welcome2-text {
     background-color: var(--dark-brown);
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
     width: 70%;
+    margin: 2rem auto;
 }
 
-.welcome-background-elements2 {
-    position: absolute;
-    top: 0;
-    left: -2rem;
-    right: -2rem;
-    width: auto;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+.squares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: -1rem;
 }
 
+.square {
+    width: 120px;
+    height: 120px;
+}
 
+.square1 {
+    rotate: 13deg;
+    background-color: var(--dark-brown);
+}
+.square2 {
+    rotate: -10deg;
+    background-color: var(--dark-brown);
+}
+.square3 {
+    rotate: -5deg;
+    background-color: var(--dark-brown);
+}
 
-@media (min-width: 768px) {
+.projects {
+    margin: 10rem 0;
+    height: 50vh;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0 2rem;
+}
+
+.project-card {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    background-color: var(--dark-brown);
+    border-radius: 50px;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+h4 {
+    text-align: start;
+    margin: 1.5rem 2rem;
+    color: white;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 4rem 0 2rem 0;
+}
+
+@media (min-width: 1025px) {
     /* INTRO */
     .intro-card {
-        height: 380px;
-        max-width: 70%;
+        height: 500px;
+        max-width: 60%;
         padding: 2rem;
-        margin: 5rem auto;
+        margin: auto;
     }
 
     .intro-card h1 {
@@ -279,67 +320,168 @@ body {
         margin: 1.5rem;
     }
 
-    .intro-card p {
+    .quote {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .quote p {
         font-size: 1.5rem;
-        padding: 1rem 5rem;
-        margin: 1.5rem 2rem;
+        padding: 0 5rem;
+        margin: 2rem;
     }
 
     .clip {
-        width: 90px;
-        right: 20%;
-        top: 2%;
+        width: 100px;
+        right: 22%;
+        top: 18%;
     }
 
     .cat {
         width: 170px;
         position: absolute;
-        top: 65%;
-        right: 23%;
+        top: 53%;
+        right: 31%;
         transform: translateY(-50%) translateX(50%);
         z-index: 1;
     }
 
     .dragon {
-        width: 600px;
-        right: -10%;
-        top: -20%;
+        width: 650px;
+        right: 0;
+        top: -5%;
     }
 
     .astrology {
-        width: 400px;
-        left: -5%;
-        bottom: -20%;
+        width: 480px;
+        left: -2%;
+        bottom: 5%;
     }
 
     .bunny {
         width: 250px;
-        left: 8%;
-        top: 23%;
+        left: 10%;
+        top: 18%;
     }
 
     .letter1 {
-        width: 900px;
+        width: 1000px;
         left: 2%;
-        top: 12%;
+        top: 5%;
     }
 
     .letter2 {
-        width: 900px;
+        width: 1000px;
         right: 2%;
         bottom: 5%;
     }
 
     .sakura1 {
         width: 250px;
-        right: 7%;
-        bottom: 20%;
+        right: 10%;
+        bottom: 17%;
     }
 
     .sakura2 {
         width: 250px;
-        right: 12%;
-        bottom: 17%;
+        right: 17%;
+        bottom: 14%;
+    }
+
+    /* WELCOME */
+    .welcome {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-content: start;
+        margin: 5rem auto;
+    }
+
+    .welcome1 {
+        flex: 1;
+        margin: 0;
+        height: 80vh;
+    }
+
+    .welcome h2 {
+        padding: 1.2rem 0 0.3rem;
+        font-size: 3rem;
+    }
+
+    .welcome-title {
+        width: 70%;
+        margin-top: 3rem;
+    }
+
+    .welcome-clip {
+        width: 80px;
+        position: absolute;
+        left: 36%;
+        top: -6%;
+        z-index: 1;
+    }
+
+    .me {
+        width: 400px;
+    }
+
+    .welcome2 {
+        flex: 1;
+    }
+
+    .welcome p {
+        font-size: 1.5rem;
+    }
+
+    .welcome2-text {
+        padding: 6rem 3rem;
+        width: 60%;
+    }
+
+    .squares {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: -1rem;
+    }
+
+    .square {
+        width: 200px;
+        height: 250px;
+    }
+
+    /* PROJECTS */
+    .projects {
+        margin: 10rem 12rem;
+        height: 80vh;
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .project-card {
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+
+    h4 {
+        margin: 2rem;
+    }
+
+    .projects a {
+        font-size: 1.5rem;
+        margin: 0;
     }
 }
 

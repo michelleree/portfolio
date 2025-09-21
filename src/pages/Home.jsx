@@ -6,9 +6,9 @@ import astrology from "../assets/images/astrology.png";
 import bunny from "../assets/images/bunny.png";
 import letter from "../assets/images/letter.png";
 import sakura from "../assets/images/sakura.png";
-import file from "../assets/images/file.png";
 import me from "../assets/images/me.png";
 import "../styles/Home.css";
+import {Link} from "react-router-dom";
 
 export default function Home() {
     return (
@@ -37,9 +37,6 @@ export default function Home() {
 
             <section className="welcome">
                 <div className="welcome1">
-                    <div className="welcome-background-elements">
-                        <img src={file} alt="file" className="file1"/>
-                    </div>
                     <div>
                         <img src={clip} alt="clip" className="welcome-clip"/>
                         <div className="welcome-title"><h2>Welcome</h2></div>
@@ -47,8 +44,8 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="welcome2">
-                    <div className="welcome-background-elements2">
-                        <img src={file} alt="file" className="file2"/>
+                    <div className="welcome-background-elements">
+
                     </div>
                     <div className="welcome2-text">
                         <h3>Hello, you</h3>
@@ -58,13 +55,40 @@ export default function Home() {
                             and Arts Northwestern Switzerland (FHNW).
                         </p>
                     </div>
+                    <div className="squares">
+                        <div className="square square1"></div>
+                        <div className="square square2"></div>
+                        <div className="square square3"></div>
+                    </div>
                 </div>
             </section>
 
-            <section>
-                <h2>Recent Projects</h2>
-                <div>
-                    <h3>Project 1</h3>
+            <section className="projects">
+                <div className="project-header">
+                    <h3>Recent Projects</h3>
+                    <Link to="/work">view all →</Link>
+                </div>
+                <div className="projects-container">
+                    <div className="project-card">
+                        <div className="project-image"></div>
+                        <h4>Project 1</h4>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-image"></div>
+                        <h4>Project 1</h4>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-image"></div>
+                        <h4>Project 1</h4>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-image"></div>
+                        <h4>Project 1</h4>
+                    </div>
+                    <div className="project-card">
+                        <div className="project-image"></div>
+                        <h4>Project 1</h4>
+                    </div>
                 </div>
             </section>
 
