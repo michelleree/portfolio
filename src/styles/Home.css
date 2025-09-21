@@ -26,7 +26,7 @@ body {
     margin: auto;
     background: var(--light-brown);
     max-width: 100%;
-    height: 480px;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -44,7 +44,7 @@ body {
     background-color: var(--brown);
     margin: 1rem 1rem 3rem 1rem;
     position: relative;
-    height: 180px;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
 }
 
 .clip {
-    width: 70px;
+    width: 15vw;
     height: auto;
     transform: rotate(7deg);
     position: absolute;
@@ -89,7 +89,7 @@ body {
 }
 
 .cat {
-    width: 120px;
+    width: 30vw;
     position: absolute;
     top: 48%;
     right: 20%;
@@ -98,54 +98,54 @@ body {
 }
 
 .dragon {
-    width: 400px;
+    width: 90vw;
     height: auto;
     position: absolute;
-    right: -30%;
-    top: -2%;
+    right: -20%;
+    top: -3%;
     z-index: -1;
 }
 
 .astrology {
-    width: 320px;
+    width: 80vw;
     height: auto;
     position: absolute;
     left: -25%;
-    bottom: 5%;
+    bottom: 2%;
     z-index: -1;
 }
 
 .bunny {
-    width: 120px;
+    width: 30vw;
     height: auto;
     position: absolute;
-    left: -15%;
-    top: 7%;
+    left: -12%;
+    top: 8%;
     z-index: 2;
 }
 
 .letter1 {
-    width: 550px;
+    width: 130vw;
     height: auto;
     position: absolute;
-    left: -60%;
+    left: -50%;
     top: 5%;
     z-index: -5;
     opacity: 0.7;
 }
 
 .letter2 {
-    width: 550px;
+    width: 130vw;
     height: auto;
     position: absolute;
-    right: -60%;
+    right: -50%;
     bottom: 10%;
     z-index: -5;
     opacity: 0.7;
 }
 
 .sakura1 {
-    width: 150px;
+    width: 35vw;
     height: auto;
     position: absolute;
     right: -10%;
@@ -154,7 +154,7 @@ body {
 }
 
 .sakura2 {
-    width: 150px;
+    width: 35vw;
     height: auto;
     position: absolute;
     right: 7%;
@@ -191,15 +191,15 @@ body {
 }
 
 .welcome-clip {
-    width: 80px;
+    width: 18vw;
     position: absolute;
     right: 10%;
-    top: -2%;
+    top: -1%;
     z-index: 1;
 }
 
 .me {
-    width: 300px;
+    width: 75vw;
     margin: 1rem 0;
 }
 
@@ -245,8 +245,8 @@ h3 {
 }
 
 .square {
-    width: 120px;
-    height: 120px;
+    width: 30vw;
+    height: 30vw;
 }
 
 .square1 {
@@ -281,8 +281,8 @@ h3 {
 
 .project-card {
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    width: 70vw;
+    height: 70vw;
     background-color: var(--dark-brown);
     border-radius: 50px;
     scroll-snap-align: center;
@@ -306,10 +306,179 @@ h4 {
     margin: 4rem 0 2rem 0;
 }
 
+/* Tablet View (iPad, etc.) */
+@media (min-width: 768px) {
+    /* INTRO */
+    .intro-card {
+        height: 40vh;
+        max-width: 70%;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .intro-card h1 {
+        font-size: 6rem;
+    }
+
+    .quote p {
+        padding: 0 2rem;
+    }
+
+    .clip {
+        width: 10vw;
+        right: 22%;
+        top: 18%;
+    }
+
+    .cat {
+        width: 15vw;
+        top: 53%;
+        right: 24%;
+    }
+
+    .dragon {
+        width: 70vw;
+        right: -5%;
+        top: -5%;
+    }
+
+    .astrology {
+        width: 50vw;
+        left: -5%;
+        bottom: 2%;
+    }
+
+    .bunny {
+        width: 20vw;
+        left: 0;
+        top: 17%;
+    }
+
+    .letter1 {
+        width: 80vw;
+        left: -2%;
+        top: 10%;
+    }
+
+    .letter2 {
+        width: 80vw;
+        right: -2%;
+        bottom: 10%;
+    }
+
+    .sakura1 {
+        width: 24vw;
+        right: 2%;
+        bottom: 17%;
+    }
+
+    .sakura2 {
+        width: 24vw;
+        right: 10%;
+        bottom: 15%;
+    }
+
+    /* WELCOME */
+    .welcome {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-content: start;
+        margin: 5rem auto;
+    }
+
+    .welcome1 {
+        flex: 1;
+        margin: 0;
+        height: 70vh;
+    }
+
+    .welcome h2 {
+        font-size: 2.2rem;
+    }
+
+    .welcome-clip {
+        width: 10vw;
+        position: absolute;
+        left: 33%;
+        top: -8%;
+        z-index: 1;
+    }
+
+    .me {
+        width: 40vw;
+    }
+
+    .welcome2 {
+        flex: 1;
+        height: 70vh;
+    }
+
+    .welcome h3 {
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+    }
+
+    .welcome2-text {
+        padding: 4rem 2.5rem;
+        width: 70%;
+    }
+
+    .squares {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: -1rem;
+    }
+
+    .square {
+        width: 15vw;
+        height: 18vw;
+    }
+
+    /* PROJECTS */
+    .projects {
+        margin: 10rem 4rem;
+        height: 50vh;
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .project-card {
+        height: 25vw;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+
+    h4 {
+        margin: 2rem;
+    }
+
+    .projects a {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+
 @media (min-width: 1025px) {
     /* INTRO */
     .intro-card {
-        height: 500px;
+        height: 35vw;
         max-width: 60%;
         padding: 2rem;
         margin: auto;
@@ -332,60 +501,60 @@ h4 {
     }
 
     .clip {
-        width: 100px;
+        width: 5vw;
         right: 22%;
-        top: 18%;
+        top: 14%;
     }
 
     .cat {
-        width: 170px;
+        width: 10vw;
         position: absolute;
-        top: 53%;
+        top: 50%;
         right: 31%;
         transform: translateY(-50%) translateX(50%);
         z-index: 1;
     }
 
     .dragon {
-        width: 650px;
+        width: 40vw;
         right: 0;
         top: -5%;
     }
 
     .astrology {
-        width: 480px;
-        left: -2%;
-        bottom: 5%;
+        width: 30vw;
+        left: -3%;
+        bottom: 2%;
     }
 
     .bunny {
-        width: 250px;
+        width: 15vw;
         left: 10%;
-        top: 18%;
+        top: 16%;
     }
 
     .letter1 {
-        width: 1000px;
+        width: 60vw;
         left: 2%;
         top: 5%;
     }
 
     .letter2 {
-        width: 1000px;
+        width: 60vw;
         right: 2%;
         bottom: 5%;
     }
 
     .sakura1 {
-        width: 250px;
+        width: 15vw;
         right: 10%;
-        bottom: 17%;
+        bottom: 12%;
     }
 
     .sakura2 {
-        width: 250px;
+        width: 15vw;
         right: 17%;
-        bottom: 14%;
+        bottom: 10%;
     }
 
     /* WELCOME */
@@ -414,15 +583,15 @@ h4 {
     }
 
     .welcome-clip {
-        width: 80px;
+        width: 5vw;
         position: absolute;
         left: 36%;
-        top: -6%;
+        top: -7%;
         z-index: 1;
     }
 
     .me {
-        width: 400px;
+        width: 25vw;
     }
 
     .welcome2 {
@@ -446,8 +615,8 @@ h4 {
     }
 
     .square {
-        width: 200px;
-        height: 250px;
+        width: 13vw;
+        height: 15vw;
     }
 
     /* PROJECTS */
@@ -470,9 +639,190 @@ h4 {
     }
 
     .project-card {
+        height: 25vw;
         flex-shrink: 1;
         flex-grow: 1;
-        flex-basis: 40%;
+        flex-basis: 30%;
+    }
+
+    h4 {
+        margin: 2rem;
+    }
+
+    .projects a {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* INTRO */
+    .intro-card {
+        height: 35vw;
+        max-width: 60%;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .intro-card h1 {
+        font-size: 7rem;
+        margin: 1.5rem;
+    }
+
+    .quote {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .quote p {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+        margin: 2rem;
+    }
+
+    .clip {
+        width: 5vw;
+        right: 22%;
+        top: 14%;
+    }
+
+    .cat {
+        width: 10vw;
+        position: absolute;
+        top: 50%;
+        right: 31%;
+        transform: translateY(-50%) translateX(50%);
+        z-index: 1;
+    }
+
+    .dragon {
+        width: 40vw;
+        right: 0;
+        top: -5%;
+    }
+
+    .astrology {
+        width: 30vw;
+        left: -3%;
+        bottom: 2%;
+    }
+
+    .bunny {
+        width: 15vw;
+        left: 10%;
+        top: 16%;
+    }
+
+    .letter1 {
+        width: 60vw;
+        left: 2%;
+        top: 5%;
+    }
+
+    .letter2 {
+        width: 60vw;
+        right: 2%;
+        bottom: 5%;
+    }
+
+    .sakura1 {
+        width: 15vw;
+        right: 10%;
+        bottom: 12%;
+    }
+
+    .sakura2 {
+        width: 15vw;
+        right: 17%;
+        bottom: 10%;
+    }
+
+    /* WELCOME */
+    .welcome {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-content: start;
+        margin: 5rem auto;
+    }
+
+    .welcome1 {
+        flex: 1;
+        margin: 0;
+        height: 80vh;
+    }
+
+    .welcome h2 {
+        padding: 1.2rem 0 0.3rem;
+        font-size: 3rem;
+    }
+
+    .welcome-title {
+        width: 70%;
+        margin-top: 3rem;
+    }
+
+    .welcome-clip {
+        width: 5vw;
+        position: absolute;
+        left: 36%;
+        top: -7%;
+        z-index: 1;
+    }
+
+    .me {
+        width: 25vw;
+    }
+
+    .welcome2 {
+        flex: 1;
+    }
+
+    .welcome p {
+        font-size: 1.5rem;
+    }
+
+    .welcome2-text {
+        padding: 6rem 3rem;
+        width: 60%;
+    }
+
+    .squares {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: -1rem;
+    }
+
+    .square {
+        width: 13vw;
+        height: 15vw;
+    }
+
+    /* PROJECTS */
+    .projects {
+        margin: 10rem 12rem;
+        height: 80vh;
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .project-card {
+        height: 25vw;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 30%;
     }
 
     h4 {

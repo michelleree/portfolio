@@ -1,4 +1,12 @@
 import {useState} from "react";
+import "../styles/Contact.css";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy as farCopy } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope as fasEnvelope, faCheck as fasCheck } from '@fortawesome/free-solid-svg-icons';
+import { faGithub as fabGithub, faTiktok as fabTiktok } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fasEnvelope, fasCheck, farCopy, fabGithub, fabTiktok);
 
 function Contact() {
     const [copied, setCopied] = useState(false);
@@ -12,29 +20,26 @@ function Contact() {
     };
 
     return(
-        <section className="py-20 contact h-screen">
-            {/*<img src={sparkles} alt="sparkles" className="sparkles sparkles-top"/>*/}
+        <section className="contact">
             <div className="icon-row">
                 <a href="https://www.tiktok.com/@van4d1um" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-tiktok fa-4x"></i>
+                    <FontAwesomeIcon icon={['fab', 'tiktok']} size="4x" />
                 </a>
                 <a href="https://github.com/michelleree" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-github fa-4x"></i>
+                    <FontAwesomeIcon icon={['fab', 'github']} size="4x" />
                 </a>
                 <div className="email-box">
                     <a href={`mailto:${email}`}>
-                        <i className="fa-solid fa-envelope fa-4x"></i>
+                        <FontAwesomeIcon icon={['fas', 'envelope']} size="4x" />
                     </a>
                     <span className="email-text">{email}</span>
                     <button onClick={copyToClipboard} className="copy-btn cursor-pointer" title="Copy email">
-                        <i className={copied ? "fa-solid fa-check fa-4x" : "fa-regular fa-copy fa-4x"}></i>
+                        <FontAwesomeIcon icon={copied ? ['fas', 'check'] : ['far', 'copy']} size="4x" />
                     </button>
                 </div>
             </div>
-
-            {/*<img src={sparkles} alt="sparkles" className="sparkles sparkles-bottom"/>*/}
         </section>
-    )
+    );
 }
 
 export default Contact;
