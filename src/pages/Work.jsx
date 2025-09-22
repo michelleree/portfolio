@@ -18,8 +18,8 @@ export default function Work() {
             <div>
                 <img src={filmStripe} alt="Film Stripe"/>
             </div>
-            <div>
-                <div>
+            <div className="projects-overview">
+                <div className="project">
 
                 </div>
             </div>
