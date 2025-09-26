@@ -4,6 +4,47 @@ body {
     background-color: var(--medium-brown);
 }
 
+.test {
+    /* This is crucial for the child's absolute positioning */
+    position: relative;
+    /* Example dimensions (use values appropriate for your layout) */
+    width: 100%;
+    height: 300px;
+    /* Optional: visual aid */
+    border: 2px solid blue;
+}
+
+/* 📱 Basis-Stile (Gültig für alle Größen, aber optimiert für Mobile) */
+.corner-image {
+    position: absolute;
+    /* Kleiner, responsiver Abstand zum Rand für kleine Bildschirme */
+    top: -5vh;
+    right: -2vw;
+    /* Proportionale Größe, die auf kleinen Bildschirmen gut aussieht */
+    width: 12vw;
+    height: auto;
+    z-index: 10;
+}
+
+/* 💻 Ab Tablet-Breite (z.B. 768px): Mehr Abstand, leicht kleinere Bildgröße relativ zum Viewport */
+@media (min-width: 768px) {
+    .corner-image {
+        top: -8vh;     /* Abstand erhöhen */
+        right: -4vw;
+        width: 8vw;    /* Bild relativ kleiner machen */
+    }
+}
+
+/* 🖥️ Ab Desktop-Breite (z.B. 1200px): Eventuell feste Pixelwerte für maximale Abstände/Größe */
+@media (min-width: 1200px) {
+    .corner-image {
+        /* Wechsel zu px, um eine Überdimensionierung auf riesigen Monitoren zu verhindern */
+        top: -100px;
+        right: -50px;
+        width: 70px;
+    }
+}
+
 /* INTRO */
 .intro {
     height: 90vh;
@@ -313,7 +354,7 @@ h4 {
         height: 40vh;
         max-width: 70%;
         padding: 2rem;
-        margin: auto;
+        margin: 2rem 0;
     }
 
     .intro-card h1 {

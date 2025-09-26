@@ -13,6 +13,11 @@ import {Link} from "react-router-dom";
 export default function Home() {
     return (
         <main>
+            <div className="test">
+                <h2>Main Content Area</h2>
+                <p>This content will flow normally.</p>
+                <img src={bunny} alt="bunny" className="corner-image"/>
+            </div>
             <section className="intro">
                 <div className="intro-background-elements">
                     <img src={dragon} alt="dragon" className="dragon"/>
