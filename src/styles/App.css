@@ -25,9 +25,21 @@ body {
   font-family: "Futura Md BT", sans-serif;
 }
 
-.main-content {
+/* Alt: .main-content (wird jetzt nur noch als flex/grid container genutzt, falls nötig) */
+/* .main-content {
     margin: 0 auto;
     padding: 2rem;
+} */
+
+.app-container {
+    /* WICHTIG: Erlaubt den absoluten Elementen, über den Rand zu gehen */
+    overflow-x: hidden;
+}
+
+.main-content-padded {
+    /* Nur dieses Element erhält den Padding, die absolut positionierten Elemente ignorieren es */
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 h1 {

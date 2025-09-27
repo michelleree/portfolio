@@ -13,11 +13,6 @@ import {Link} from "react-router-dom";
 export default function Home() {
     return (
         <main>
-            <div className="test">
-                <h2>Main Content Area</h2>
-                <p>This content will flow normally.</p>
-                <img src={bunny} alt="bunny" className="corner-image"/>
-            </div>
             <section className="intro">
                 <div className="intro-background-elements">
                     <img src={dragon} alt="dragon" className="dragon"/>
@@ -25,13 +20,13 @@ export default function Home() {
                     <img src={letter} alt="letter" className="letter1"/>
                     <img src={letter} alt="letter" className="letter2"/>
                 </div>
-                <img src={clip} alt="clip" className="clip"/>
-                <img src={catSvg} alt="sleeping cat" className="cat"/>
-                <img src={bunny} alt="bunny" className="bunny"/>
-                <img src={sakura} alt="sakura" className="sakura1"/>
-                <img src={sakura} alt="sakura" className="sakura2"/>
 
                 <div className="intro-card">
+                    <img src={bunny} alt="bunny" className="bunny"/>
+                    <img src={clip} alt="clip" className="clip"/>
+                    <img src={catSvg} alt="sleeping cat" className="cat"/>
+                    <img src={sakura} alt="sakura" className="sakura1"/>
+                    <img src={sakura} alt="sakura" className="sakura2"/>
                     <h1>Michelle</h1>
                     <div className="quote">
                         <p>Just like a cat, I know how to find the best spots— whether it’s in code or design!</p>
@@ -39,10 +34,9 @@ export default function Home() {
                 </div>
             </section>
 
-
             <section className="welcome">
                 <div className="welcome1">
-                    <div>
+                    <div className="welcome-card">
                         <img src={clip} alt="clip" className="welcome-clip"/>
                         <div className="welcome-title"><h2>Welcome</h2></div>
                         <img src={me} alt="me" className="me"/>

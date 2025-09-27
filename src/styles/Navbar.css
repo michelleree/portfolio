@@ -4,15 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: 2rem auto;
     padding: 0.5rem 2rem;
     color: var(--dark-brown);
     background: var(--light-brown);
     border: 2px solid var(--dark-brown);
     border-radius: 50px;
     list-style: none;
-    position: sticky;
-    top: 4%;
-    z-index: 100;
+
 }
 
 .logo {

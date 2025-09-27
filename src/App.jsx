@@ -11,8 +11,9 @@ import "./styles/App.css";
 function App() {
     return (
         <Router>
-            <div className="main-content">
+            <div className="app-container"> {/* Neues globales div, KEIN padding hier */}
                 <Navbar/>
+                <div className="main-content-padded">
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/work" element={<Work/>}/>
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
                 <Footer/>
+                </div>
             </div>
         </Router>
     );
