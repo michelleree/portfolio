@@ -1,17 +1,8 @@
-import Contact from "../components/Contact.jsx";
+import ContactInfo from "../components/ContactInfo.jsx";
 import stamp from "../assets/images/stamp.png";
 import handwriting from "../assets/images/handwriting.png";
-import stampBG from "../assets/images/stamp-bg.png";
-
-import catSvg from "../assets/images/cat.svg";
-import clip from "../assets/images/realistic_binder_clip.svg";
-import dragon from "../assets/images/dragon.svg";
-import astrology from "../assets/images/astrology.png";
-import bunny from "../assets/images/bunny.png";
-import letter from "../assets/images/letter.png";
-import sakura from "../assets/images/sakura.png";
+//import stampBG from "../assets/images/stamp-bg.png";
 import me from "../assets/images/me.png";
-import rippedPaper from "../assets/images/ripped-paper.png";
 import "../styles/Home.css";
 import {Link} from "react-router-dom";
 
@@ -21,7 +12,7 @@ export default function Home() {
             <section className="intro-section">
                 <div className="letter">
                     <div className="letter-header">
-                        <div>
+                        <div className="letter-header-text">
                             <h3>new york blabla</h3>
                             <p>NEW YORK CITY BLABLA NEW YORK CITY BLABLANEW YORK CITY BLABLANEW YORK CITY BLABLANEW YORK
                                 CITY BLABLA NEW YORK CITY BLABLA
@@ -90,7 +81,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <Contact/>
+            <ContactInfo/>
         </main>
     );
 }

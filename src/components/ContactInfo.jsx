@@ -1,5 +1,5 @@
 import {useState} from "react";
-import "../styles/Contact.css";
+import "../styles/ContactInfo.css";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy as farCopy } from '@fortawesome/free-regular-svg-icons';
@@ -8,7 +8,7 @@ import { faGithub as fabGithub, faTiktok as fabTiktok } from '@fortawesome/free-
 
 library.add(fasEnvelope, fasCheck, farCopy, fabGithub, fabTiktok);
 
-function Contact() {
+function ContactInfo() {
     const [copied, setCopied] = useState(false);
     const email = "vaan4d1um@gmail.com";
 
@@ -42,4 +42,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default ContactInfo;

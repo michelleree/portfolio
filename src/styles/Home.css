@@ -34,6 +34,11 @@ body {
     flex-direction: row;
     gap: 0.8rem;
     align-items: start;
+    justify-content: space-between;
+}
+
+.letter-header-text {
+    width: 50vw;
 }
 
 .letter-header h3 {
@@ -64,7 +69,7 @@ body {
     color: #722;
     text-align: center;
     font-family: var(--header-font), serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -103,10 +108,12 @@ body {
 }
 
 .welcome-container-part1-h2 {
+    width: 60vw;
     padding: 1rem 3rem 0.5rem;
     background-color: var(--light-brown);
     border: 8px solid var(--dark-brown);
     transform: rotate(-7deg);
+    margin: 0 auto;
 }
 
 .welcome-container-part1-h2 h2 {
@@ -145,6 +152,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     background-color: white;
     padding: 1.5rem;
@@ -214,6 +222,10 @@ body {
     justify-content: end;
 }
 
+h3 {
+    color: white;
+}
+
 h4 {
     text-align: start;
     margin: 1.5rem 2rem;
@@ -232,7 +244,57 @@ h4 {
 
 /* 💻 Ab Tablet-Breite (z.B. 768px): Mehr Abstand, leicht kleinere Bildgröße relativ zum Viewport */
 @media (min-width: 768px) {
+    /* INTRO */
+    .letter {
+        height: 40vh;
+        gap: 2rem;
+    }
 
+    .letter-header {
+        gap: 6rem;
+    }
+
+    .letter-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .letter-header p {
+        font-size: 0.8rem;
+    }
+
+    .letter-header img {
+        width: 25vw;
+    }
+
+    .letter-text h2 {
+        font-size: 2rem;
+    }
+
+    .letter-text img {
+        width: 40vw;
+    }
+
+    /* WELCOME */
+    .welcome-container {
+        margin: 0 5rem;
+    }
+
+    .welcome-container-part1 {
+        height: 55vh;
+    }
+
+    .welcome-container-part1-h2 {
+        width: 30vw;
+    }
+
+    .me-img {
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+    .welcome-container-part2-images {
+        flex-direction: row;
+    }
 
     /* PROJECTS */
     .projects {
@@ -271,11 +333,72 @@ h4 {
 }
 
 @media (min-width: 1200px) {
+    /* INTRO */
+    .letter {
+        height: 70vh;
+        width: 50vw;
+        gap: 1rem;
+    }
 
+    .letter-header-text {
+        width: 25vw;
+    }
+
+    .letter-header img {
+        width: 13vw;
+    }
+
+    .letter-text h2 {
+        font-size: 2rem;
+    }
+
+    .letter-text img {
+        width: 20vw;
+    }
+
+    /* WELCOME */
+    .welcome-container {
+        flex-direction: row;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 0 10rem;
+    }
+
+    .welcome-container-part1 {
+        flex: 1 1 0;
+        height: 90vh;
+    }
+
+    .welcome-container-part1-h2 {
+        width: 15vw;
+    }
+
+    .me-img {
+        width: 20vw;
+    }
+
+    .welcome-container-part2 {
+        flex: 1 1 0;
+    }
+
+    .welcome-container-part2-text {
+        justify-content: start;
+        padding: 0 2rem;
+    }
+
+    .welcome-container-part2-images {
+        flex-direction: row;
+        gap: 0.2rem;
+    }
+
+    .bitch {
+        height: 25vh;
+    }
 
     /* PROJECTS */
     .projects {
-        margin: 10rem 12rem;
+        max-width: 70%;
+        margin: 0 auto;
         height: 100vh;
     }
 }

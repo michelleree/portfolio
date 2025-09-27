@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Project from "./pages/Project";
 import Experience from "./pages/Experience";
-import Contact from "./components/Contact.jsx";
+import ContactInfo from "./components/ContactInfo.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import "./styles/App.css";
@@ -19,7 +19,7 @@ function App() {
                         <Route path="/work" element={<Work/>}/>
                         <Route path="/work/:projectId" element={<Project/>}/>
                         <Route path="/experience" element={<Experience/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/contact" element={<ContactInfo/>}/>
                     </Routes>
                     <Footer/>
                 </div>

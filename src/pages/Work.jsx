@@ -1,4 +1,4 @@
-import Contact from "../components/Contact.jsx";
+import ContactInfo from "../components/ContactInfo.jsx";
 import "../styles/Work.css";
 import filmStripe from "../assets/images/film stripe.png";
 
@@ -26,7 +26,7 @@ export default function Work() {
             <div>
                 <img src={filmStripe} alt="Film Stripe"/>
             </div>
-            <Contact/>
+            <ContactInfo/>
         </main>
     );
 }
