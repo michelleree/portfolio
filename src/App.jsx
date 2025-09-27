@@ -11,17 +11,17 @@ import "./styles/App.css";
 function App() {
     return (
         <Router>
-            <div className="app-container"> {/* Neues globales div, KEIN padding hier */}
+            <div className="app-container">
                 <Navbar/>
                 <div className="main-content-padded">
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/work" element={<Work/>}/>
-                    <Route path="/work/:projectId" element={<Project/>}/>
-                    <Route path="/experience" element={<Experience/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                </Routes>
-                <Footer/>
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/work" element={<Work/>}/>
+                        <Route path="/work/:projectId" element={<Project/>}/>
+                        <Route path="/experience" element={<Experience/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
+                    </Routes>
+                    <Footer/>
                 </div>
             </div>
         </Router>

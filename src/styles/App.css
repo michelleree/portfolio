@@ -16,6 +16,7 @@
   --brown: #A67244;
   --light-brown: #F2DDB6;
   --green: #73672F;
+  --dark-green: #414000;
 }
 
 body {
@@ -25,21 +26,32 @@ body {
   font-family: "Futura Md BT", sans-serif;
 }
 
-/* Alt: .main-content (wird jetzt nur noch als flex/grid container genutzt, falls nötig) */
-/* .main-content {
-    margin: 0 auto;
-    padding: 2rem;
-} */
-
 .app-container {
     /* WICHTIG: Erlaubt den absoluten Elementen, über den Rand zu gehen */
     overflow-x: hidden;
 }
 
+/* Ihre bestehenden Styles in App.css */
 .main-content-padded {
-    /* Nur dieses Element erhält den Padding, die absolut positionierten Elemente ignorieren es */
+    /* Behält den allgemeinen Padding bei */
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+/* NEUE KLASSE: Bricht das Element aus dem Padding aus */
+.full-width-section {
+    /* 1. Negativer Margin gleicht das linke/rechte Padding des Elternelements (.main-content-padded) aus. */
+    margin-left: -2rem;
+    margin-right: -2rem;
+
+    /* 2. Padding/Border des Elternelements wird zur Breite hinzugerechnet,
+       sodass das Element nun 100% + 4rem breit ist.
+       Wichtig: 100% bezieht sich auf die Breite des Elternelements (nach Padding). */
+    width: calc(100% + 4rem);
+
+    /* Stellt sicher, dass das Bild richtig skaliert wird */
+    background-size: cover;
+    background-position: center center;
 }
 
 h1 {

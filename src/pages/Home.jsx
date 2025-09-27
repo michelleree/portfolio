@@ -1,4 +1,8 @@
 import Contact from "../components/Contact.jsx";
+import stamp from "../assets/images/stamp.png";
+import handwriting from "../assets/images/handwriting.png";
+import stampBG from "../assets/images/stamp-bg.png";
+
 import catSvg from "../assets/images/cat.svg";
 import clip from "../assets/images/realistic_binder_clip.svg";
 import dragon from "../assets/images/dragon.svg";
@@ -7,57 +11,52 @@ import bunny from "../assets/images/bunny.png";
 import letter from "../assets/images/letter.png";
 import sakura from "../assets/images/sakura.png";
 import me from "../assets/images/me.png";
+import rippedPaper from "../assets/images/ripped-paper.png";
 import "../styles/Home.css";
 import {Link} from "react-router-dom";
 
 export default function Home() {
     return (
         <main>
-            <section className="intro">
-                <div className="intro-background-elements">
-                    <img src={dragon} alt="dragon" className="dragon"/>
-                    <img src={astrology} alt="astrology map" className="astrology"/>
-                    <img src={letter} alt="letter" className="letter1"/>
-                    <img src={letter} alt="letter" className="letter2"/>
-                </div>
-
-                <div className="intro-card">
-                    <img src={bunny} alt="bunny" className="bunny"/>
-                    <img src={clip} alt="clip" className="clip"/>
-                    <img src={catSvg} alt="sleeping cat" className="cat"/>
-                    <img src={sakura} alt="sakura" className="sakura1"/>
-                    <img src={sakura} alt="sakura" className="sakura2"/>
-                    <h1>Michelle</h1>
-                    <div className="quote">
-                        <p>Just like a cat, I know how to find the best spots— whether it’s in code or design!</p>
+            <section className="intro-section">
+                <div className="letter">
+                    <div className="letter-header">
+                        <div>
+                            <h3>new york blabla</h3>
+                            <p>NEW YORK CITY BLABLA NEW YORK CITY BLABLANEW YORK CITY BLABLANEW YORK CITY BLABLANEW YORK
+                                CITY BLABLA NEW YORK CITY BLABLA
+                            </p>
+                        </div>
+                        <img src={stamp} alt="stamp"/>
+                    </div>
+                    <div className="letter-text">
+                        <h2>Dearest you,</h2>
+                        <img src={handwriting} alt="handwriting"/>
                     </div>
                 </div>
             </section>
 
-            <section className="welcome">
-                <div className="welcome1">
-                    <div className="welcome-card">
-                        <img src={clip} alt="clip" className="welcome-clip"/>
-                        <div className="welcome-title"><h2>Welcome</h2></div>
-                        <img src={me} alt="me" className="me"/>
+            <section className="welcome-section">
+                <div className="welcome-container">
+                    <div className="welcome-container-part1">
+                        <div className="welcome-container-part1-h2">
+                            <h2>Welcome!</h2>
+                        </div>
+                        <img src={me} alt="me" className="me-img"/>
+                        {/*<img src={stampBG} alt="stampBG" className="stampBG"/>*/}
                     </div>
-                </div>
-                <div className="welcome2">
-                    <div className="welcome-background-elements">
-
-                    </div>
-                    <div className="welcome2-text">
-                        <h3>Hello, you</h3>
-                        <p>
-                            My name is Michelle :). I am currently doing my bachelor’s degree as Computer Science
-                            with a specialization in Design and Management at the University of Applied Sciences
-                            and Arts Northwestern Switzerland (FHNW).
-                        </p>
-                    </div>
-                    <div className="squares">
-                        <div className="square square1"></div>
-                        <div className="square square2"></div>
-                        <div className="square square3"></div>
+                    <div className="welcome-container-part2">
+                        <div className="welcome-container-part2-text">
+                            <h3>Hello, you</h3>
+                            <p>My name is Michelle :). I am currently doing my bachelor’s degree as Computer Science
+                                with a specialization in Design and Management at the University of Applied Sciences and
+                                Arts Northwestern Switzerland (FHNW).</p>
+                        </div>
+                        <div className="welcome-container-part2-images">
+                            <div className="bitch"></div>
+                            <div className="bitch"></div>
+                            <div className="bitch"></div>
+                        </div>
                     </div>
                 </div>
             </section>
