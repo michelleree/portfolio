@@ -99,7 +99,6 @@ body {
 }
 
 .welcome-container-part1 {
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +187,8 @@ body {
 
 .bitch {
     background-color: var(--light-brown);
+    position: relative;
+    rotate: 7deg;
     height: 20vh;
     aspect-ratio: 3/4;
 }
@@ -245,8 +246,8 @@ h4 {
 @media (min-width: 768px) {
     /* INTRO */
     .letter {
-        height: 40vh;
-        gap: 2rem;
+        height: 400px;
+        gap: 1rem;
     }
 
     .letter-header {
@@ -262,7 +263,7 @@ h4 {
     }
 
     .letter-header img {
-        width: 25vw;
+        width: 17vw;
     }
 
     .letter-text h2 {
@@ -270,7 +271,7 @@ h4 {
     }
 
     .letter-text img {
-        width: 40vw;
+        width: 30vw;
     }
 
     /* WELCOME */
@@ -279,7 +280,6 @@ h4 {
     }
 
     .welcome-container-part1 {
-        height: 55vh;
     }
 
     .welcome-container-part1-h2 {
@@ -287,12 +287,16 @@ h4 {
     }
 
     .me-img {
-        width: 40vw;
+        width: 30vw;
         margin: 0 auto;
     }
 
     .welcome-container-part2-images {
         flex-direction: row;
+    }
+
+    .bitch {
+        height: 20vh;
     }
 
     /* PROJECTS */
@@ -333,7 +337,6 @@ h4 {
 @media (min-width: 1200px) {
     /* INTRO */
     .letter {
-        height: 70vh;
         width: 50vw;
         gap: 1rem;
     }
@@ -359,12 +362,13 @@ h4 {
         flex-direction: row;
         max-width: 70%;
         margin: 0 auto;
-        padding: 0 10rem;
+        background-color: snow;
     }
 
     .welcome-container-part1 {
         flex: 1 1 0;
         height: 90vh;
+        background: none;
     }
 
     .welcome-container-part1-h2 {
@@ -377,6 +381,7 @@ h4 {
 
     .welcome-container-part2 {
         flex: 1 1 0;
+        background: none;
     }
 
     .welcome-container-part2-text {

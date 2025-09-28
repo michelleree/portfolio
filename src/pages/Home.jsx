@@ -81,7 +81,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <ContactInfo/>
+            <ContactInfo className="contact-info"/>
         </main>
     );
 }
