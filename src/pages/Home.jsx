@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="projects">
+            <section className="projects-section">
                 <div className="project-header">
                     <h3>Recent Projects</h3>
                     <Link to="/work">view all →</Link>
