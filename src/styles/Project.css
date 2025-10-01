@@ -1,0 +1,5 @@
+@import url("App.css");
+
+body {
+    background-color: var(--brown);
+}
