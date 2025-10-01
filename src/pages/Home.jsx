@@ -22,7 +22,11 @@ export default function Home() {
                     </div>
                     <div className="letter-text">
                         <h2>Dearest you,</h2>
-                        <img src={handwriting} alt="handwriting"/>
+                        <div className="handwriting">
+                            <p>Just like a cat, I know how to find the best spots. Whether it's in code or design!</p>
+                            <p>xx m.</p>
+                        </div>
+                        {/*<img src={handwriting} alt="handwriting"/>*/}
                     </div>
                 </div>
             </section>

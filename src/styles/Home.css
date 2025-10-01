@@ -1,5 +1,13 @@
 @import url("App.css");
 
+@font-face {
+    font-family: 'myHandwriting';
+    src: url('../assets/fonts/Myhandwriting-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: var(--dark-green);
 }
@@ -79,6 +87,14 @@ body {
     width: 60vw;
     height: auto;
     object-fit: contain;
+}
+
+.handwriting {
+    font-family: 'myHandwriting', sans-serif;
+    color: rgba(41, 41, 41, 0.9);
+    font-size: 1.5rem;
+    width: 60vw;
+    margin: 2rem auto;
 }
 
 /* WELCOME */
@@ -274,6 +290,11 @@ h4 {
         width: 30vw;
     }
 
+    .handwriting {
+        font-size: 2rem;
+        margin: 3rem auto;
+    }
+
     /* WELCOME */
     .welcome-container {
         margin: 0 5rem;
@@ -356,6 +377,11 @@ h4 {
     .letter-text img {
         width: 20vw;
     }
+
+    .handwriting {
+        width: 40vw;
+    }
+
 
     /* WELCOME */
     .welcome-container {
