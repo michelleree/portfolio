@@ -1,0 +1,39 @@
+@import url("App.css");
+
+.work-intro {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stripe1 {
+    background-color: #772222;
+    width: 110vw;
+    height: 10vw;
+    margin-left: -3rem;
+    rotate: -3deg;
+}
+
+.stripe2 {
+    background-color: #772222;
+    width: 110vw;
+    height: 10vw;
+    margin-left: -3rem;
+}
+
+.work-intro h2 {
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+.work-intro p {
+    font-size: 1.2rem;
+    text-align: start;
+    width: 60vw;
+    margin: 3rem 0;
+}
+
+
+
+
