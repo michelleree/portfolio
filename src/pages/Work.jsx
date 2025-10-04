@@ -24,9 +24,26 @@ export default function Work() {
                 </div>
             </section>
             <section className="projects-overview">
-                <h3>Design</h3>
-                <div className="project">
+                <div className="category-section">
+                    <h3>Design</h3>
+                    <div className="category-projects">
+                        <div className="ps"></div>
+                        <div className="ps"></div>
+                    </div>
+                </div>
+                <div className="category-section">
+                    <h3>Code</h3>
+                    <div className="category-projects">
+                        <div className="ps"></div>
 
+                    </div>
+                </div>
+                <div className="category-section">
+                    <h3>Others</h3>
+                    <div className="category-projects">
+                        <div className="ps"></div>
+
+                    </div>
                 </div>
             </section>
             <div>
