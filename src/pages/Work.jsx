@@ -1,6 +1,8 @@
 import ContactInfo from "../components/ContactInfo.jsx";
 import "../styles/Work.css";
-import filmStripe from "../assets/images/film stripe.png";
+// import filmStripe from "../assets/images/film stripe.png";
+import { Link } from 'react-router-dom';
+import { projects } from '../data/projectData.js'; // Daten importiert
 
 export default function Work() {
     return (
@@ -8,7 +10,6 @@ export default function Work() {
             <section className="work-intro">
                 <h2>My Work & Experience</h2>
                 <div>
-                    {/*<img src={filmStripe} alt="Film Stripe"/>*/}
                     <div className="stripe1"></div>
                 </div>
                 <div>
@@ -19,35 +20,34 @@ export default function Work() {
                         If you have any questions or concerns, feel free to reach out.</p>
                 </div>
                 <div>
-                    {/*<img src={filmStripe} alt="Film Stripe"/>*/}
                     <div className="stripe2"></div>
                 </div>
             </section>
+
             <section className="projects-overview">
-                <div className="category-section">
-                    <h3>Design</h3>
-                    <div className="category-projects">
-                        <div className="ps"></div>
-                        <div className="ps"></div>
+                {projects.map((group) => (
+                    <div className="category-section" key={group.category}>
+                        <h3>{group.category}</h3>
+                        <div className="category-projects">
+                            {group.items.map((project) => (
+                                // Der Link navigiert zur Detailseite und übergibt den 'slug' als URL-Parameter
+                                <Link to={`/project/${project.slug}`} key={project.slug}>
+                                    <div
+                                        className="ps"
+                                        style={{ backgroundImage: `url(${project.image})` }}
+                                        title={project.title} // Für bessere Zugänglichkeit
+                                    >
+                                        {/* Hier können Sie z.B. den Titel overlayen, wenn das ps-div dafür gestylt ist */}
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="category-section">
-                    <h3>Code</h3>
-                    <div className="category-projects">
-                        <div className="ps"></div>
-
-                    </div>
-                </div>
-                <div className="category-section">
-                    <h3>Others</h3>
-                    <div className="category-projects">
-                        <div className="ps"></div>
-
-                    </div>
-                </div>
+                ))}
             </section>
+
             <div>
-                <img src={filmStripe} alt="Film Stripe"/>
+                <div className="stripe2"></div>
             </div>
             <ContactInfo/>
         </main>

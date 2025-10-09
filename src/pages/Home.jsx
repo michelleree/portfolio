@@ -52,6 +52,11 @@ export default function Home() {
                             <div className="bitch"></div>
                             <div className="bitch"></div>
                         </div>
+                        <div className="fancy-button">
+                            <Link to="/experience">
+                                <button>find out more</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

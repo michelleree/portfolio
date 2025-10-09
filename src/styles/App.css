@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Futura Md BT", sans-serif;
+  font-family: HelveticaNeue, sans-serif;
 }
 
 .app-container {
@@ -86,5 +86,8 @@ button {
     background: none;
     border: none;
     outline: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
